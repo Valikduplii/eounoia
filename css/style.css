@@ -245,6 +245,7 @@ input {
    width: 136px;
    color: #cccccc;
    font-size: 14px;
+   padding: 0px 10px;
 }
 
 input::placeholder {
