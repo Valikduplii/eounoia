@@ -80,7 +80,7 @@ h6 {
 header {
    width: 100%;
    background-color: rgba(153, 51, 204, 1);
-   height: 52px;
+   min-height: 52px;
    margin: 0px 0px 55px 0px;
    padding: 0px 10px;
 }
@@ -89,32 +89,30 @@ body {
 }
 .header {
    color: #fff;
-   display: flex;
+   display: inline-block;
+   width: 100%;
+   min-height: 52px;
 }
 .header__container li a:hover {
    opacity: 90%;
 }
 .signUp {
-   flex: 0 0 50%;
-   position: relative;
-   bottom: -6px;
-}
-.signUp a {
    color: #fff;
+   float: left;
    position: relative;
-   text-align: center;
    left: 10px;
    font-size: 13pt;
    line-height: 30px;
+   top: 16px;
 }
 nav {
-   flex: 0 0 50%;
+   display: inline-block;
+   float: right;
 }
 nav ul {
-   display: flex;
-   justify-content: flex-end;
    list-style-type: none;
-   margin: 0px 15px 0px 0px;
+   margin: 0px 15px 0px 15px;
+   padding-inline-start: 0px;
 }
 nav ul li {
    display: inline-block;
@@ -125,24 +123,11 @@ nav ul li a {
    text-decoration: none;
    color: #fff;
 }
-nav ul li:nth-child(1):after {
+nav ul li:after {
    content: "";
-   display: block;
+   display: inline-block;
    position: relative;
-   left: 30%;
-   margin: -27px 25px;
-   width: 28px;
-   height: 3px;
-   border-radius: 13%;
-   background-color: rgba(255, 247, 0, 0.82);
-   transform: rotate(270deg);
-}
-nav ul li:nth-child(2):after {
-   content: "";
-   display: block;
-   position: relative;
-   left: 35%;
-   margin: -27px 25px;
+   margin: 5px 5px;
    width: 28px;
    height: 3px;
    border-radius: 13%;
@@ -153,34 +138,6 @@ nav ul li:last-child:after {
    content: "";
    display: none;
    margin: 0px;
-}
-@media (max-width: 767.97px) {
-   .signUp {
-      flex: 1 1 20%;
-   }
-   nav {
-      flex: 0 0 50%;
-   }
-   nav ul {
-      display: flex;
-      justify-content: flex-end;
-      list-style-type: none;
-      margin: 0px 10px 0px 0px;
-   }
-}
-@media (max-width: 319.97px) {
-   .signUp {
-      flex: 1 1 60px;
-   }
-   nav {
-      width: 200px
-   }
-   nav ul {
-      display: flex;
-      justify-content: flex-end;
-      list-style-type: none;
-      margin: 0px 10px 0px 0px;
-   }
 }
 body.lock {
    overflow: hidden;
@@ -427,8 +384,10 @@ input::placeholder {
       margin: 30px 40px 0px 0px;
    }
    header {
-      margin-bottom: 35px;
+      margin: 0px 0px 35px 0px;
+      padding: 0px;
    }
+   
 }
 @media (max-width: 400px) {
    .popup__cont {
