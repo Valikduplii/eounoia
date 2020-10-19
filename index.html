@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/fonts.css">
    <title>EOUNOIA</title>
 </head>
-
 <body>
    <div class="wrapper">
-      <div class="content">
-         <header id="header" class="lock-padding">
-            <div class="container1000">
+      <header id="header" class="header lock-padding">
+         <div class="container1000">
                <div class="header__container header">
                   <a href="#form" class="signUp popup-link">SignUp</a>
                   <nav class="">
@@ -24,38 +21,10 @@
                      </ul>
                   </nav>
                </div>
-            </div>
-            <div id="form" class="popup">
-               <div class="popup__body">
-                  <div class="popup__content">
-                     <div class="popup__cont_1">
-                        <a href="#header" class="popup__close close-popup">X</a>
-                        <form class="popup__content_form">
-                           <div class="popup__title_1">Lorem Ipsum</div>
-                           <div class="popup__text_1">But I must explain to you how all this mistaken idea was born and
-                              I
-                              will praising pain was born</div>
-                           <div class="form_namfirst">
-                              <div><input type="text" class="name" name="name" id="name" placeholder="Name"></div>
-                              <div><input type="text" class="firstname" name="" id="firstname" placeholder="Firstname">
-                              </div>
-                           </div>
-                           <div class="s">
-                              <div><input type="text" name="" class="mail" id="mail" placeholder="Email"></div>
-                              <div><input type="text" name="" class="number_form" id="number_form"
-                                    placeholder="Number of phone"></div>
-                              <div><input type="text" name="" class="city" id="city" placeholder="City"></div>
-                           </div>
-                           <button class="register__btn">send</button>
-                        </form>
-                        <img src="../image/popup/bck.jpg" class="popup__photo_1" alt="">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </header>
-         <main>
-            <div class="about__body">
+         </div>
+      </header>
+      <div class="content">
+         <div class="about__body">
                <div class="left">
                   <img src="image/info/left.png" class="content__left bck" alt="">
                </div>
@@ -69,9 +38,8 @@
                <div class="right">
                   <img src="image/info/right.png" class="content__left bck" alt="">
                </div>
-            </div>
-      </div>
-      <div class="container900">
+         </div>
+         <div class="container900">
          <div class="numbers__body">
             <div class="number__row">
                <div class="number__column ">
@@ -102,8 +70,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="project__bg" style="background-image: url(image/project/bck_project.png);">
+         </div>
+         <div class="project__bg" style="background-image: url(image/project/bck_project.png);">
          <div class="container900">
             <div class="project__row">
                <div class="project_column flex_1">
@@ -133,10 +101,9 @@
                </div>
             </div>
          </div>
-      </div>
-   </div>
-   <div class="bg__color">
-      <div class="container1100">
+         </div>
+         <div class="bg__color">
+            <div class="container1100">
          <div class="author__title">Authors</div>
          <div class="authors">
             <div class="author author_1">
@@ -175,27 +142,56 @@
                </div>
             </div>
          </div>
-      </div>
-   </div>
-   </main>
-   <footer>
-      <div class="container1100">
-         <div class="footer__body">
-            <div class="footer__contacts">
-               <div class="footer__email">
-                  cdouglaschi@domain.com
-               </div>
-               <div class="footer__numbers">
-                  <a href="+44 20 3820 6622">+44 20 3820 6622</a>
+            </div>
+         </div>
+         <footer>
+            <div class="container1100">
+               <div class="footer__body">
+                  <div class="footer__contacts">
+                     <div class="footer__email">
+                        cdouglaschi@domain.com
+                     </div>
+                     <div class="footer__numbers">
+                        <a href="+44 20 3820 6622">+44 20 3820 6622</a>
+                     </div>
+                  </div>
+                  <div class="footer__2020">
+                     <div class="footer_2020"> © 2020</div>
+                  </div>
                </div>
             </div>
-            <div class="footer__2020">
-               <div class="footer_2020"> © 2020</div>
+         </footer>
+      </div>
+   </div>
+   <div id="form" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <div class="popup__cont_1">
+               <a href="#header" class="popup__close close-popup">X</a>
+               <form class="popup__content_form">
+                  <div class="popup__title_1">Lorem Ipsum</div>
+                  <div class="popup__text_1">But I must explain to you how all this mistaken idea was born and
+                     I
+                     will praising pain was born</div>
+                  <div class="form_namfirst">
+                     <div><input type="text" class="name" name="name" id="name" placeholder="Name"></div>
+                     <div><input type="text" class="firstname" name="" id="firstname" placeholder="Firstname">
+                     </div>
+                  </div>
+                  <div class="s">
+                     <div><input type="text" name="" class="mail" id="mail" placeholder="Email"></div>
+                     <div><input type="text" name="" class="number_form" id="number_form"
+                           placeholder="Number of phone"></div>
+                     <div><input type="text" name="" class="city" id="city" placeholder="City"></div>
+                  </div>
+                  <button class="register__btn">send</button>
+               </form>
+               <img src="image/popup/bck.jpg" class="popup__photo_1" alt="">
             </div>
          </div>
       </div>
-   </footer>
-   <script src="js/script.js"></script>
+   </div>
+   
 </body>
-
+   <script src="js/script.js"></script>
 </html>

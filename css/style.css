@@ -1,6 +1,9 @@
 *,
 *:before,
 *:after {
+   padding: 0;
+   margin: 0;
+   border: 0;
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
@@ -17,19 +20,21 @@ nav,
 footer,
 header,
 aside {
+   padding: 0px !important;
    display: block;
+}
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
 }
 html,
 body {
    font-family: "SourceSansProLight";
    height: 100%;
-   width: 100%;
-   font-size: 100%;
    line-height: 1;
    font-size: 14px;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-   margin: 0;
 }
 input,
 button,
@@ -69,23 +74,19 @@ h6 {
    font-weight: inherit;
 }
 .wrapper {
-}
-.content {
-   flex: 1 1 auto;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 0px !important;
+   margin: 0px !important;
 }
 .container1000 {
    max-width: 1024px;
    margin: 0 auto;
 }
 header {
-   width: 100%;
    background-color: rgba(153, 51, 204, 1);
    min-height: 52px;
    margin: 0px 0px 55px 0px;
-   padding: 0px 10px;
-}
-body {
-   padding: 0px;
 }
 .header {
    color: #fff;
@@ -140,7 +141,6 @@ nav ul li:last-child:after {
    margin: 0px;
 }
 body.lock {
-   overflow: hidden;
    padding: 0px !important;
 }
 .popup__cont {
@@ -152,6 +152,7 @@ body.lock {
 .form_namfirst {
    display: flex;
    flex-direction: row;
+   justify-content: center;
    border-radius: 20px;
    margin: 20px 10px 20px 10px;
 }
@@ -362,9 +363,6 @@ input::placeholder {
       max-width: 370px;
       border-radius: 20px;
    }
-   .form_namfirst {
-      margin: 10px 0px 20px 40px;
-   }
    .name{
       margin: 0px;
    }
@@ -375,6 +373,7 @@ input::placeholder {
       display: none;
    }
    .popup__content_form {
+      width: 100%;
       padding: 0px;
    }
    .popup__text_1 {
@@ -441,6 +440,10 @@ input::placeholder {
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
+}
+.content {
+   margin-top: 100px;
+   width: 100vw;
 }
 .content__middle {
    flex: 1 1 50%;
